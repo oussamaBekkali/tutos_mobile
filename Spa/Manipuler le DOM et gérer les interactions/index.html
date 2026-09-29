@@ -1,0 +1,25 @@
+<button id="btn-show-form">Nouvelle catégorie</button>
+
+<section id="section-form" hidden>
+  <form id="form-categorie">
+    <input type="text" id="cat-nom" placeholder="Nom" />
+
+    <input type="text" id="cat-couleur" placeholder="Couleur" />
+
+    <button type="submit">Ajouter</button>
+    <button type="button" id="btn-cancel-form">Annuler</button>
+  </form>
+</section>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Couleur</th>
+    </tr>
+  </thead>
+
+  <tbody id="table-categories-body"></tbody>
+</table>
+
+<script src="app.js"></script>

@@ -1,0 +1,30 @@
+erDiagram
+    CLIENT ||--o{ COMMANDE : PASSE
+    COMMANDE ||--|{ COMMANDE_PRODUIT : CONTIENT
+    PRODUIT ||--o{ COMMANDE_PRODUIT : CONCERNE
+
+    CLIENT {
+        int id_client PK
+        string email_client
+        string nom_client
+    }
+
+    COMMANDE {
+        int numero_commande PK
+        date date_commande
+        string nom_client
+        string email_client
+        int id_client
+    }
+
+    PRODUIT {
+        int id_produit PK
+        string nom_produit
+        decimal prix_produit
+    }
+
+    COMMANDE_PRODUIT {
+        int id_produit PK
+        int numero_commande PK
+        int quantite_commmande
+    }
