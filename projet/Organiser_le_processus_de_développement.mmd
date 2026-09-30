@@ -1,0 +1,30 @@
+graph LR
+    A[" DEFINE<br/>What are we doing ?<br/>─────────────<br/>Define the objective and<br/>CRUD requirements"]
+
+    B[" DESIGN<br/>How will we do it ?<br/>─────────────<br/>Task 1: Database design<br/>Task 3: HTML form design"]
+
+    C[" DEVELOP<br/>Build it<br/>─────────────<br/>Task 1: Create SQL table<br/>Task 2: Create CRUD API<br/>Task 3: Build HTML form<br/>Task 4: Connect form → API"]
+
+    D[" TEST<br/>Does it work ?<br/>─────────────<br/>Task 5a: Technical tests<br/>(behavior)"]
+
+    E["✅ VALIDATE<br/>Does it meet the requirements ?<br/>─────────────<br/>Task 5b: Requirement validation<br/>(compliance with the need)"]
+
+    A --> B --> C --> D --> E
+
+    A -. "Deliverable" .-> A1["Objective and scope defined"]
+    B -. "Deliverable" .-> B1["Data model + HTML mockup"]
+    C -. "Deliverable" .-> C1["Working code"]
+    D -. "Deliverable" .-> D1["List of bugs (or 0)"]
+    E -. "Deliverable" .-> E1["Feature accepted"]
+
+    style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0c4a6e
+    style B fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#4c1d95
+    style C fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
+    style D fill:#fef9c3,stroke:#ca8a04,stroke-width:2px,color:#713f12
+    style E fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
+
+    style A1 fill:#f0f9ff,stroke:#0284c7,stroke-dasharray:5 5
+    style B1 fill:#f5f3ff,stroke:#7c3aed,stroke-dasharray:5 5
+    style C1 fill:#eff6ff,stroke:#2563eb,stroke-dasharray:5 5
+    style D1 fill:#fefce8,stroke:#ca8a04,stroke-dasharray:5 5
+    style E1 fill:#f0fdf4,stroke:#16a34a,stroke-dasharray:5 5
