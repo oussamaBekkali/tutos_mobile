@@ -1,0 +1,18 @@
+flowchart TD
+    A["Fonctionnalité :<br/>Gérer les catégories"]
+
+    A --> B["Tâche 1 :<br/>Créer la table SQL categories"]
+
+    B --> C["Tâche 2 :<br/>Créer l'API CRUD"]
+    B --> D["Tâche 3 :<br/>Construire le formulaire HTML"]
+
+    C --> E["Tâche 4 :<br/>Connecter l'interface à l'API"]
+    D --> E
+
+    E --> F["Tâche 5 :<br/>Tester et valider"]
+
+    B -. "Dépendance" .-> C
+    B -. "Dépendance" .-> D
+    C -. "Dépendance" .-> E
+    D -. "Dépendance" .-> E
+    E -. "Dépendance" .-> F
